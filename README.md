@@ -1,3 +1,3 @@
 # hello every one
 ##### this is the first snapshot of this template
-<a href="https://khaledyssaad.github.io/elzero-template/" target="_blank">click on here</a>
+[click right here](https://khaledyssaad.github.io/elzero-template/) (Ctrl+click or Cmd+click to open in a new tab)
