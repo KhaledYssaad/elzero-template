@@ -44,6 +44,14 @@ ul {
     margin-right: auto;
 }
 
+
+/* very small  */
+@media (max-width:418px) {
+    body {
+        width: 112%;
+    }
+}
+
 /* Small */
 @media (min-width: 768px) {
     .container {
