@@ -1085,7 +1085,7 @@ nav ul li:last-child a+.big-menu:hover {
 
 @media (max-width:767px) {
     .services .service {
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 
