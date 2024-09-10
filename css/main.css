@@ -200,12 +200,6 @@ nav ul li:last-child .big-menu {
     z-index: 10;
 }
 
-nav ul li:last-child a:hover+.big-menu,
-nav ul li:last-child a+.big-menu:hover {
-    opacity: 1;
-    display: flex;
-}
-
 .big-menu .image {
     width: 350px;
     overflow: hidden;
