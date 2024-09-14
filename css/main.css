@@ -1221,6 +1221,7 @@ nav ul li:last-child .big-menu {
     display: block;
     background-color: var(--main-color);
     height: 100%;
+    transition: 0.5s;
 }
 
 /* skills end  */
@@ -2075,7 +2076,7 @@ footer .love {
 /* scroll */
 
 a.up {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 50px;
