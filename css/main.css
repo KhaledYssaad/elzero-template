@@ -17,7 +17,6 @@
 
 html {
     scroll-behavior: smooth;
-    touch-action: manipulation;
 }
 
 body {
@@ -531,7 +530,7 @@ nav ul li:last-child .big-menu {
 .articles-box {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr));
     gap: 25px;
 }
 
@@ -647,7 +646,7 @@ nav ul li:last-child .big-menu {
 
 .gallery .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 40px;
     max-width: 100%;
 }
@@ -889,7 +888,7 @@ nav ul li:last-child .big-menu {
 
 .testimonials .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
     gap: 20px;
 }
 
@@ -959,7 +958,7 @@ nav ul li:last-child .big-menu {
 
 .team .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 300px));
     gap: 40px;
     justify-content: space-between;
 }
@@ -1061,7 +1060,7 @@ nav ul li:last-child .big-menu {
 
 .services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1544,7 +1543,7 @@ nav ul li:last-child .big-menu {
 .pricing .container {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1785,7 +1784,7 @@ nav ul li:last-child .big-menu {
 
 .stats .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
     gap: 40px;
     justify-content: center;
     position: relative;
@@ -1911,6 +1910,15 @@ nav ul li:last-child .big-menu {
     caret-color: var(--main-color);
 }
 
+.discount form input:invalid {
+    border-bottom-color: #e74c3c;
+}
+
+.discount form input:valid {
+    border-bottom-color: #2ecc71;
+}
+
+
 .discount form textarea {
     height: 250px;
 }
@@ -1921,6 +1929,7 @@ nav ul li:last-child .big-menu {
     font-weight: bold;
     font-size: large;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 @media (max-width:840px) {
@@ -1951,7 +1960,7 @@ footer {
 
 footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
     gap: 15px;
     align-content: center;
 }
